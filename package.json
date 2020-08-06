@@ -3,22 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles --watchAll --verbose --coverage"
+    "test": "jest --watchAll --verbose --maxWorkers=1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.18.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "compression": "^1.7.4",
     "config": "^3.3.1",
     "express": "^4.16.2",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "helmet": "^4.0.0",
     "jest": "^26.2.2",
     "joi": "^13.1.0",
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.19",
+    "moment": "^2.27.0",
     "mongoose": "^5.0.2",
     "nodemon": "^2.0.4",
     "winston": "^2.4.0",
