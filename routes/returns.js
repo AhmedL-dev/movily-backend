@@ -1,36 +1,38 @@
-const validate = require('../middleware/validate')
-const Joi = require('joi')
-const moment = require('moment')
-const {Rental} = require('../models/rental')
-const {Movie} = require('../models/movie')
-const express = require('express');
+const Joi = require("joi");
+const validate = require("../middleware/validate");
+const { Rental } = require("../models/rental");
+const { Movie } = require("../models/movie");
+const auth = require("../middleware/auth");
+const express = require("express");
 const router = express.Router();
-const auth = require('../middleware/auth')
 
+router.post("/", [auth, validate(validateReturn)], async (req, res) => {
+  const rental = await Rental.lookup(req.body.customerId, req.body.movieId);
 
+  if (!rental) return res.status(404).send("Rental not found.");
 
-router.post('/',[auth, validate(validateReturns)],  async (req, res) => {
-  const rental = await Rental.lookup(req.body.customerId, req.body.movieId)
+  if (rental.dateReturned)
+    return res.status(400).send("Return already processed.");
 
-  if (!rental) return res.status(404).send('Rental not found')
+  rental.return();
+  await rental.save();
 
-  if (rental.dateReturned) return res.status(400).send('Rental already processed')
+  await Movie.update(
+    { _id: rental.movie._id },
+    {
+      $inc: { numberInStock: 1 },
+    }
+  );
 
-  rental.return()
-  await rental.save()
-
-  await Movie.update({_id: rental.movie._id}, {
-    $inc: {numberInStock: 1}
-  })
-  
-  return res.send(rental) 
+  return res.send(rental);
 });
 
-function validateReturns(req) {
+function validateReturn(req) {
   const schema = {
     customerId: Joi.objectId().required(),
-    movieId: Joi.objectId().required()
+    movieId: Joi.objectId().required(),
   };
+
   return Joi.validate(req, schema);
 }
 

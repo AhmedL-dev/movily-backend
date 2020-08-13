@@ -1,4 +1,4 @@
 {
-  "jwtPrivateKey": "",
+  "jwtPrivateKey": "1234",
   "db": "mongodb://localhost/movily"
 }
