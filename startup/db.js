@@ -3,13 +3,13 @@ const mongoose = require("mongoose");
 const config = require("config");
 
 module.exports = function () {
-  const db = config.get("db");
+  // const db = config.get("db");
 
   const username = "ahmed123";
   const password = "ahmed123";
   const dbName = "test";
 
-  // const db = `mongodb://${username}:${password}@movily-shard-00-00.frolq.mongodb.net:27017,movily-shard-00-01.frolq.mongodb.net:27017,movily-shard-00-02.frolq.mongodb.net:27017/${dbName}?ssl=true&replicaSet=atlas-jckp60-shard-0&authSource=admin&retryWrites=true&w=majority`;
+  const db = `mongodb://${username}:${password}@movily-shard-00-00.frolq.mongodb.net:27017,movily-shard-00-01.frolq.mongodb.net:27017,movily-shard-00-02.frolq.mongodb.net:27017/${dbName}?ssl=true&replicaSet=atlas-jckp60-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
   mongoose
     .connect(db)
