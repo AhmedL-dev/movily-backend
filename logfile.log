@@ -202,3 +202,5 @@
 {"level":"info","message":"Connected to mongodb://localhost/movily...","timestamp":"2020-08-23T14:52:30.874Z"}
 {"level":"info","message":"Listening on port 3002...","timestamp":"2020-08-23T17:06:46.225Z"}
 {"level":"info","message":"Connected to mongodb://localhost/movily...","timestamp":"2020-08-23T17:06:48.271Z"}
+{"level":"info","message":"Listening on port 3002...","timestamp":"2020-08-23T17:17:19.981Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movily...","timestamp":"2020-08-23T17:17:22.003Z"}
