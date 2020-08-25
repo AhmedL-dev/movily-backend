@@ -6,3 +6,12 @@
 {"level":"info","message":"Connected to mongodb://localhost/movily_tests...","timestamp":"2020-08-25T19:44:33.710Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T19:44:36.402Z"}
 {"level":"info","message":"Connected to mongodb://localhost/movily_tests...","timestamp":"2020-08-25T19:44:38.416Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T22:11:50.128Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T22:12:24.270Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movily_tests...","timestamp":"2020-08-25T22:12:26.286Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T22:13:49.147Z"}
+{"level":"info","message":"Connected to mongodb+srv://ahmedazeaze123:ahmed123@movily.frolq.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2020-08-25T22:13:50.125Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T22:14:03.430Z"}
+{"level":"info","message":"Connected to mongodb+srv://ahmedazeaze123:ahmed123@movily.frolq.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2020-08-25T22:14:05.997Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T22:14:29.698Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movily...","timestamp":"2020-08-25T22:14:31.720Z"}
