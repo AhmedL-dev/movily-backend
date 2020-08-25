@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "movily_jwtPrivateKey"
+  "jwtPrivateKey": "movily_jwtPrivateKey",
+  "db": "movily_db"
 }
