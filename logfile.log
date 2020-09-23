@@ -15,3 +15,9 @@
 {"level":"info","message":"Connected to mongodb+srv://ahmedazeaze123:ahmed123@movily.frolq.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2020-08-25T22:14:05.997Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2020-08-25T22:14:29.698Z"}
 {"level":"info","message":"Connected to mongodb://localhost/movily...","timestamp":"2020-08-25T22:14:31.720Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-09-09T14:38:20.170Z"}
+{"level":"info","message":"Connected to mongodb://ahmed123:ahmed123@movily-shard-00-00.frolq.mongodb.net:27017,movily-shard-00-01.frolq.mongodb.net:27017,movily-shard-00-02.frolq.mongodb.net:27017/test?ssl=true&replicaSet=atlas-jckp60-shard-0&authSource=admin&retryWrites=true&w=majority...","timestamp":"2020-09-09T14:38:24.059Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-09-09T14:40:14.304Z"}
+{"level":"info","message":"Connected to mongodb://ahmed123:ahmed123@movily-shard-00-00.frolq.mongodb.net:27017,movily-shard-00-01.frolq.mongodb.net:27017,movily-shard-00-02.frolq.mongodb.net:27017/test?ssl=true&replicaSet=atlas-jckp60-shard-0&authSource=admin&retryWrites=true&w=majority...","timestamp":"2020-09-09T14:40:17.332Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-09-23T20:36:38.540Z"}
+{"level":"info","message":"Connected to mongodb://ahmed123:ahmed123@movily-shard-00-00.frolq.mongodb.net:27017,movily-shard-00-01.frolq.mongodb.net:27017,movily-shard-00-02.frolq.mongodb.net:27017/test?ssl=true&replicaSet=atlas-jckp60-shard-0&authSource=admin&retryWrites=true&w=majority...","timestamp":"2020-09-23T20:36:40.671Z"}
